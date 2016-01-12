@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
   
   int numbers[4] = {0};
   int other_numbers[4] = {};
-  /* Char arrays are different than number arrays, because they dont fill up the remaining 
+/* Char arrays are different than number arrays, because they dont fill up the remaining 
    * indexes of the array. But, what happens underneath the hood is that it actually fills in the indexes
    * with 0, but the nul byte ('\0') is actually special in the sense that it terminates the string effectively ,
    * and doesn't display the rest. I know its not explained in full if all of the indexes are filled with nul bytes,
@@ -91,8 +91,8 @@ int main(int argc, char *argv[])
 
 
   /* What happens when we write out an entire char array to a integer? :) */
-  printf("Printing out an entire char array as a integer: %d \n", what_is_the_size_of_a_char_array);
-
+  /*printf("Printing out an entire char array as a integer: %d \n", what_is_the_size_of_a_char_array);
+*/
   /* The reason why this is interesting, the part about one char array being the same size as a integer, is because that means we can contain several char arrays in a 
    * single array right? because if the number can fit, then the char array surely can aswell. */
 
