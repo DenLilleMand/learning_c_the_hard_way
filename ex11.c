@@ -2,7 +2,9 @@
 
 int main(int argc, char *argv[])
 {
-  //Go through each string in argv
+  /**Go through each string in argv
+  while i < argc, doesn't return a boolean,
+  but returns either 0 or 1*/
   int i = 0;
   while(i < argc) {
     printf("arg %d: %s\n",i, argv[i]);
@@ -21,8 +23,6 @@ int main(int argc, char *argv[])
     i++;
   }
 
-
-
   char *cakes[] = {
     "chocolate cake", "raspberry cake", "layered cake"
   };
@@ -31,7 +31,6 @@ int main(int argc, char *argv[])
     printf("Cake on index %d is: %s\n", i, cakes[i]);
     i--;
   }
-
 
   /* the following is a copying assignment, whats interesting 
    * about this is to make a while loop that uses the argc and argv variables,
@@ -55,7 +54,6 @@ int main(int argc, char *argv[])
   copied_args[1] = "something new";
   printf("Has the value changed? if it has, it should be equal \"Something new\" : %s \n",argv[1]);
   /* Seems like we really copied it, but is this true or did we make a mistake?? */
-
   
   return 0;
 }
